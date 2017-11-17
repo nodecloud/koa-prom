@@ -1,4 +1,4 @@
-# koa-consul
+# koa-prom
 
 This middleware will set a /metrics route as default for getting the prometheus monitor data.
 
@@ -6,7 +6,7 @@ This middleware will set a /metrics route as default for getting the prometheus 
 
 ``` javascript
 import Koa from 'koa';
-import KoaConsul from 'koa-prom';
+import KoaProm from 'koa-prom';
 
 let app = new Koa();
 
@@ -15,7 +15,7 @@ app.use(KoaProm());
 
 ## API
 
-### KoaConsul(options)
+### KoaProm(options)
 
 * options.url  default is /metrics.
 * options.register: the prom-client register, if you don't give, it will use a default register.
