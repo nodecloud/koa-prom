@@ -1,7 +1,7 @@
 {
-  "name": "koa-consul",
-  "version": "0.0.5",
-  "description": "koa consul.",
+  "name": "koa-prom",
+  "version": "0.0.1",
+  "description": "koa prom middleware.",
   "main": "build/index.js",
   "scripts": {
     "build": "babel index.js -d build",
@@ -9,21 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miaowing/koa-consul.git"
+    "url": "git+https://github.com/miaowing/koa-prom.git"
   },
   "keywords": [
     "koa-middleware",
-    "node-consul",
-    "consul health check"
+    "prom-client"
   ],
   "author": "miaowing <i@zfeng.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miaowing/koa-consul/issues"
+    "url": "https://github.com/miaowing/koa-prom/issues"
   },
-  "homepage": "https://github.com/miaowing/koa-consul#readme",
+  "homepage": "https://github.com/miaowing/koa-prom#readme",
   "dependencies": {
-    "pidusage": "^1.1.6"
+    "prom-client": "^10.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

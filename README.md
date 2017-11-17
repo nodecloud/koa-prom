@@ -1,21 +1,21 @@
 # koa-consul
 
-This middleware will set a /health route as default. The consul server will visit /health for acquiring system info and check the service's health status.
+This middleware will set a /metrics route as default for getting the prometheus monitor data.
 
 ## Usage
 
 ``` javascript
 import Koa from 'koa';
-import KoaConsul from 'koa-consul';
+import KoaConsul from 'koa-prom';
 
 let app = new Koa();
 
-app.use(KoaConsul());
+app.use(KoaProm());
 ```
 
 ## API
 
 ### KoaConsul(options)
 
-* options.url 
-* options.getInfo: a callback function, if you want custom the /health api's response, please implement this function.
+* options.url  default is /metrics.
+* options.register: the prom-client register, if you don't give, it will use a default register.
